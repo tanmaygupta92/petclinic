@@ -38,8 +38,8 @@ public class ValidatorTests {
 
         assertThat(constraintViolations.size()).isEqualTo(1);
         ConstraintViolation<Person> violation = constraintViolations.iterator().next();
-        assertThat(violation.getPropertyPath().toString()).isEqualTo("firstName");
-        assertThat(violation.getMessage()).isEqualT("may not be empty");
+        assertThat(violation.getPropertyPath().toString()).isEqualTo("abcde");
+        assertThat(violation.getMessage()).isEqualTo("may not be empty");
     }
 
 }
